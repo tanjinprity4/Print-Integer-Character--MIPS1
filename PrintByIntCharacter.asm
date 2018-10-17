@@ -24,6 +24,10 @@ main:						# Start of code section
 	addi $a0, $a0, 4			# 5 + 4 = 9; store 5 in $a0
 	syscall					# print 9
 	
+	li $v0, 11				# system call code for printing character = 11
+	addi $a0, $a0, 1			# 9 + 1 = 10; load ascii character 'LF' for line feed/ new line
+	syscall
+	
 	li $v0, 10				# system call code for exit = 10
 	syscall					# Exit program
    
