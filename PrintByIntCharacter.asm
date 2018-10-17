@@ -14,6 +14,10 @@ main:						# Start of code section
 	syscall			 			
 	addi $a0, $a0, 6			# 2 + 6 = 8; store 8 in $a0
 	syscall
+	addi $a0, $a0, -2			# 8 + (-2) = 6; store 6 in $a0
+	syscall
+	addi $a0, $a0, -3			# 6 + (-3) = 3; store 3 in $a0
+	syscall
 	
 	li $v0, 10				# system call code for exit = 10
 	syscall					# Exit program
