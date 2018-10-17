@@ -39,6 +39,10 @@ main:						# Start of code section
 	syscall
 	addi $a0, $a0, 5			# 116 + 5 = 121; load ascii character 'y' in $a0
 	syscall
+	addi $a0, $a0, -77			# 121 + (-77) = 44; load ascii character ',' in $a0
+	syscall
+	addi $a0, $a0, -12			# 44 + (-12) = 32; load ascii character Space in $a0
+	syscall
 	
 	li $v0, 10				# system call code for exit = 10
 	syscall					# Exit program
