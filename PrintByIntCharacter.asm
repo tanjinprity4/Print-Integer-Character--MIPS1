@@ -31,7 +31,10 @@ main:						# Start of code section
 	#print Prity, Tanjin
 	addi $a0, $a0, 70			# 10 + 70 = 80; load ascii character 'P' in $a0
 	syscall
-
+	addi $a0, $a0, 34			# 80 + 34 = 114; load ascii character 'r' in $a0
+	syscall
+	addi $a0, $a0, -9			# 114 + (-9) = 105; load ascii character 'i' in $a0
+	syscall
 	
 	li $v0, 10				# system call code for exit = 10
 	syscall					# Exit program
