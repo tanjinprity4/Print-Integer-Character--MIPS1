@@ -51,7 +51,10 @@ main:						# Start of code section
 	syscall
 	addi $a0, $a0, -4			# 110 + (-4) = 106; load ascii character 'j' in $a0
 	syscall
-
+	addi $a0, $a0, -1			# 106 + (-1) = 105; load ascii character 'i' in $a0
+	syscall
+	addi $a0, $a0, 5			# 105 + 5 = 110; load ascii character 'n' in $a0
+	syscall
 	
 	li $v0, 10				# system call code for exit = 10
 	syscall					# Exit program
