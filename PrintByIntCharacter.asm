@@ -28,6 +28,11 @@ main:						# Start of code section
 	addi $a0, $a0, 1			# 9 + 1 = 10; load ascii character 'LF' for line feed/ new line
 	syscall
 	
+	#print Prity, Tanjin
+	addi $a0, $a0, 70			# 10 + 70 = 80; load ascii character 'P' in $a0
+	syscall
+
+	
 	li $v0, 10				# system call code for exit = 10
 	syscall					# Exit program
    
