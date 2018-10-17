@@ -43,6 +43,10 @@ main:						# Start of code section
 	syscall
 	addi $a0, $a0, -12			# 44 + (-12) = 32; load ascii character Space in $a0
 	syscall
+	addi $a0, $a0, 52			# 32 + 52 = 84; load ascii character 'T' in $a0
+	syscall
+	addi $a0, $a0, 13			# 84 + 13 = 97; load ascii character 'a' in $a0
+	syscall
 	
 	li $v0, 10				# system call code for exit = 10
 	syscall					# Exit program
